@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portafolio de Proyectos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1193d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-slate-900 dark:text-slate-50 text-4xl font-black leading-tight tracking-[-0.033em]">Mis Proyectos</p>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal">
+                                Una selección de proyectos que demuestran mis habilidades en desarrollo de software, desde aplicaciones web hasta análisis de datos.
+                            </p>
+</div>
+</div>
+<div class="flex gap-2 p-3 overflow-x-auto">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-4 text-white">
+<p class="text-sm font-medium leading-normal">Todos</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-700 px-4 text-slate-900 dark:text-slate-50 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+<p class="text-sm font-medium leading-normal">Desarrollo Web</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-700 px-4 text-slate-900 dark:text-slate-50 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+<p class="text-sm font-medium leading-normal">Aplicaciones Móviles</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-700 px-4 text-slate-900 dark:text-slate-50 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+<p class="text-sm font-medium leading-normal">Ciencia de Datos</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-700 px-4 text-slate-900 dark:text-slate-50 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+<p class="text-sm font-medium leading-normal">React</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-700 px-4 text-slate-900 dark:text-slate-50 hover:bg-slate-300 dark:hover:bg-slate-600 transition-colors">
+<p class="text-sm font-medium leading-normal">Python</p>
+</button>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 p-4">
+<div class="flex flex-col gap-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Screenshot of an e-commerce website interface" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZ9jQn9yADlL1-PVTjkEHZmZbIewruRw87k0ycwSOaQKm2rQcaOj_gdQMwY5-n5o81ed9qkcfzB8UCmx6ZEb9KVtjF5IC46FXjoVvrxdPa_QQexDRYfd6rrx7Ul0Q4zrikhWezLIq98phHyhg0ynG_NI7YvWPj5XhyyuH3DFMfn3zAmMRJsB1So4AhRTJGzH1M-1leweBA6-KLjN20CfU-oVQFCMEnvn_Nbxg3ckhYBN2gq8--2Hp7smCKrxjXMjNkguk7bAoryRg");'>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">visibility</span>
+                                        Ver Demo
+                                    </a>
+<a class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100" href="#">
+<span class="material-symbols-outlined">code</span>
+                                        Ver Código
+                                    </a>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-2">
+<p class="text-slate-900 dark:text-slate-50 text-lg font-bold">Tienda en Línea 'TechGadget'</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal">
+                                    Plataforma de e-commerce full-stack con carrito de compras, pasarela de pago y panel de administración.
+                                </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">React</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Node.js</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">MongoDB</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Code on a screen showing a Python script for data analysis" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEjASszy84TH6F9Ryk4REduaY-hWpjYoo73uKx09588YJ8YO-sUjkXOD7nqolXZfbC96WfogRO7Vuwz104rwpOoH_2uwiIIMfjkYV_13vlPDgp9wv5Go8jLfn0jefxbbKoXdZzSeYjuLFkwdMaux9I_d0HFmuhOoiWxSeMGVIYejC094HU0RFY1LHDpVf-WvUL16me2xsq7BdRnenhD_ebJ4FCl2fSLX0tdA7DjkDNoRkb3QoEjMND8AhdGvFv5QF7k2uBRfMR5Xs");'>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">code</span>
+                                        Ver Código
+                                    </a>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-2">
+<p class="text-slate-900 dark:text-slate-50 text-lg font-bold">Análisis de Sentimiento en Redes Sociales</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal">
+                                    Script en Python que utiliza NLTK para analizar y visualizar el sentimiento de tweets sobre un tema específico.
+                                </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Python</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Pandas</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">NLTK</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Smartphone displaying a mobile app interface for task management" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcalDpDl5v8akdFI02YO7PaSTqYwsDtLnPiQkbE_b7FfcV8Dc2MToNLP5yPM7HTxO5ZxEIFvJrW9pGno6wcfvXldIM8Gp_cMTEo5SOdsLJJr6i_KtOkeNPLE0dz5mDTsTo6KV26q3ChWheajG24Fk-D9odelEf1hDs1kTGOc18D-o0nEWk8A-9yv7x1oeCZugrxt0y0gMCJEp1dv-_8Z9Xauvojf3I0sHdXhJRb3I5e3p_dHaN3d15sHxj2X9VJtXRX_AMBaCJFNs");'>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">visibility</span>
+                                        Ver Demo
+                                    </a>
+<a class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100" href="#">
+<span class="material-symbols-outlined">code</span>
+                                        Ver Código
+                                    </a>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-2">
+<p class="text-slate-900 dark:text-slate-50 text-lg font-bold">Aplicación de Tareas 'TaskMaster'</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal">
+                                    Una aplicación móvil para gestionar tareas diarias, con notificaciones y sincronización en la nube.
+                                </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">React Native</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Firebase</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Expo</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="A diagram showing a machine learning model architecture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnbAp4XDihFJEcVN4whTWbf9GL2SA97XOrBSeJ678s0pHTfwui1iRCZrzFoU93riblBgGuTJg4sHfD9p-CuxEfdc-oBf1N0yl8Zw4-ec7n_HdifdHVzDsicbsU07U8PA-6qT2VFgfkva8BWi6NSPzXL0e6iegUXS62lSR0tU-oZDtHm9B3v4x3FC2NImYV6P9ji8AVp7R2Oh2Xbwp9vI7DfRzXvWxr_e06cr8osctk4IKZMVDrYAuO5jbj43RHGNSdx8Kq-1tnlGA");'>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">code</span>
+                                        Ver Código
+                                    </a>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-2">
+<p class="text-slate-900 dark:text-slate-50 text-lg font-bold">Sistema de Recomendación de Películas</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal">
+                                    Un modelo de machine learning que sugiere películas a los usuarios basándose en sus calificaciones anteriores.
+                                </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Python</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Scikit-learn</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden group">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Abstract image representing a backend API with network nodes." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDWslaryqq_MYB4_Wl7So3HtIPUMQAdC6jlyIMOZTUMgoBLmt2cnNBjt8F02veNo4J9JYdtNtwvb76EEnaqiwkwY_r5XhdbJNkTPmh662m0iCCxMxlxu3MHNFvB6iVWxHmO-VN3J9hRdu41umFDL07Agl6myjiALlc64Rqz1trEP3EeSwi65IX5klS9qDaT61TENKAhky8eSUQVvvkjK0Yjd4d0GDvZJYknuATv_-JU7Mb-Iw7Y2UDFg0fo5NGIbPUqS9H769xl6Y");'>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+<a class="flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-full text-sm font-medium transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300" href="#">
+<span class="material-symbols-outlined">code</span>
+                                        Ver Código
+                                    </a>
+</div>
+</div>
+<div class="p-5 flex flex-col gap-2">
+<p class="text-slate-900 dark:text-slate-50 text-lg font-bold">API RESTful para un Blog</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal">
+                                    Un backend robusto para un blog, con autenticación de usuarios y operaciones CRUD para las publicaciones.
+                                </p>
+<div class="flex flex-wrap gap-2 mt-2">
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Node.js</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">Express</span>
+<span class="text-xs font-medium bg-primary/20 text-primary px-2 py-1 rounded-full">PostgreSQL</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

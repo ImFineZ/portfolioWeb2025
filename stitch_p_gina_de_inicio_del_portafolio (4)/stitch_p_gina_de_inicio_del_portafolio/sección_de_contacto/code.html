@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto - Portafolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-gray-900 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.03 15.5l-4.7-4.7 1.41-1.41 3.29 3.29 7.29-7.29L19.7 9.3 10.97 17.5z"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight">Portafolio</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary" href="#">Sobre mí</a>
+<a class="text-sm font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary" href="#">Proyectos</a>
+<a class="text-sm font-medium text-gray-800 dark:text-gray-200 hover:text-primary dark:hover:text-primary" href="#">Contacto</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors">
+<span class="truncate">CV</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="p-2">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow p-4 md:p-10">
+<div class="flex flex-col lg:flex-row gap-16">
+<div class="w-full lg:w-1/2">
+<div class="flex flex-col gap-3 mb-8">
+<p class="text-4xl font-black tracking-tighter text-gray-900 dark:text-white">¿Interesado en colaborar?</p>
+<p class="text-base font-normal text-gray-500 dark:text-gray-400">Si tienes alguna pregunta, propuesta o simplemente quieres saludar, no dudes en escribirme.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium pb-2 text-gray-900 dark:text-gray-100">Nombre</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal" placeholder="Ingresa tu nombre" type="text" value=""/>
+</label>
+</div>
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium pb-2 text-gray-900 dark:text-gray-100">Correo Electrónico</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal" placeholder="Ingresa tu correo electrónico" type="email" value=""/>
+</label>
+</div>
+<div>
+<label class="flex flex-col">
+<p class="text-base font-medium pb-2 text-gray-900 dark:text-gray-100">Mensaje</p>
+<textarea class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-gray-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark min-h-36 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal" placeholder="Escribe tu mensaje aquí"></textarea>
+</label>
+</div>
+<button class="flex w-full md:w-auto items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide hover:bg-primary/90 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed">
+<span>Enviar Mensaje</span>
+</button>
+</form>
+</div>
+<div class="w-full lg:w-1/2 lg:pl-10">
+<div class="flex flex-col gap-8">
+<h3 class="text-2xl font-bold text-gray-900 dark:text-white">O encuéntrame en</h3>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="#">
+<div class="bg-gray-200 dark:bg-gray-700 p-3 rounded-lg group-hover:bg-primary/20 transition-colors">
+<svg class="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><circle cx="4" cy="4" r="2"></circle>
+</svg>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">LinkedIn</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">/in/tu-usuario</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="#">
+<div class="bg-gray-200 dark:bg-gray-700 p-3 rounded-lg group-hover:bg-primary/20 transition-colors">
+<svg class="w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">GitHub</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">/tu-usuario</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="mailto:nombre.apellido@email.com">
+<div class="bg-gray-200 dark:bg-gray-700 p-3 rounded-lg group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined w-6 h-6 text-gray-600 dark:text-gray-300 group-hover:text-primary transition-colors">mail</span>
+</div>
+<div>
+<p class="font-semibold text-gray-800 dark:text-gray-200">Correo Electrónico</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">nombre.apellido@email.com</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
